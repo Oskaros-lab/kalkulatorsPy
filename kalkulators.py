@@ -3,7 +3,6 @@ from tkinter import*
 Kalkulators=Tk()
 import math
 Kalkulators.title("Kalkulatora projekts")
-Kalkulators.geometry("325x337")
 
 def btnClick(number):
     current=e.get() #nolasa skaitli
@@ -45,21 +44,21 @@ def Vienads():
     e.insert(0,str(result))
     return 0
 
-btn0=Button(Kalkulators, text="0", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(0))
-btn1=Button(Kalkulators, text="1", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(1))
-btn2=Button(Kalkulators, text="2", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(2))
-btn3=Button(Kalkulators, text="3", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(3))
-btn4=Button(Kalkulators, text="4", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(4))
-btn5=Button(Kalkulators, text="5", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(5))
-btn6=Button(Kalkulators, text="6", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(6))
-btn7=Button(Kalkulators, text="7", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(7))
-btn8=Button(Kalkulators, text="8", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(8))
-btn9=Button(Kalkulators, text="9", padx="30", pady="20",bg="aqua",bd=5,command=lambda:nospiestaPoga(9))
+btn0=Button(Kalkulators, text="0", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(0))
+btn1=Button(Kalkulators, text="1", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(1))
+btn2=Button(Kalkulators, text="2", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(2))
+btn3=Button(Kalkulators, text="3", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(3))
+btn4=Button(Kalkulators, text="4", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(4))
+btn5=Button(Kalkulators, text="5", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(5))
+btn6=Button(Kalkulators, text="6", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(6))
+btn7=Button(Kalkulators, text="7", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(7))
+btn8=Button(Kalkulators, text="8", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(8))
+btn9=Button(Kalkulators, text="9", padx="30", pady="20",bg="gray",bd=5,command=lambda:btnClick(9))
 
-btnReiz=Button(Kalkulators, text="*", padx="30", pady="20", bg="blue",bd=5,command=lambda:btnCommand("*"))
-btnSask=Button(Kalkulators, text="+", padx="30", pady="20",bg="blue",bd=5, command=lambda:btnCommand("+"))
-btnDal=Button(Kalkulators, text="/", padx="30", pady="20",bg="blue",bd=5,command=lambda:btnCommand("/"))
-btnMin=Button(Kalkulators, text="-", padx="30", pady="20",bg="blue",bd=5,command=lambda:btnCommand("-"))
+btnReiz=Button(Kalkulators, text="*", padx="30", pady="20", bg="orange",bd=5,command=lambda:btnCommand("*"))
+btnSask=Button(Kalkulators, text="+", padx="30", pady="20",bg="orange",bd=5, command=lambda:btnCommand("+"))
+btnDal=Button(Kalkulators, text="/", padx="30", pady="20",bg="orange",bd=5,command=lambda:btnCommand("/"))
+btnMin=Button(Kalkulators, text="-", padx="30", pady="20",bg="orange",bd=5,command=lambda:btnCommand("-"))
 btnC=Button(Kalkulators, text="C", padx="30", pady="20",bg="grey",bd=5,command=notirit)
 btnVien=Button(Kalkulators, text="=", padx="30", pady="20",bg="grey",bd=5,command=Vienads)
 
