@@ -72,7 +72,6 @@ btn6.grid(row=3, column=2)
 btn7.grid(row=1, column=0)
 btn8.grid(row=1, column=1)
 btn9.grid(row=1, column=2)
-
 btnReiz.grid(row=4, column=3)
 btnSask.grid(row=3, column=3)
 btnDal.grid(row=5, column=3)
